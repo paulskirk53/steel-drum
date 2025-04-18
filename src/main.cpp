@@ -39,7 +39,7 @@ AudioControlSGTL5000     sgtl5000_1;     //xy=613,589
 //#define SDCARD_SCK_PIN   13
 
  void setupDebounceTimes();    // declare functions
-
+ void NoteLoop();
  // PK comment I found the ezButton debounce library and it suits the project well. Code below from the EZButton sample here:
  // https://arduinogetstarted.com/tutorials/arduino-button-debounce
  // add in as many buttons as there are notes on the drum
@@ -50,24 +50,24 @@ AudioControlSGTL5000     sgtl5000_1;     //xy=613,589
  // PK todo change the pin numbers below to those conneted to the note pads on the drum
  // todo create ezButton objects that attach to pins
 // outer drum notes
- ezButton noteA(6);   
- ezButton noteB(7);   
- ezButton noteC(8);   
- ezButton noteD(8);   
- ezButton noteE(8);   
- ezButton noteF(8);   
- ezButton noteG(8);   
- ezButton noteCSharp(8);   // C sharp
- ezButton noteGSharp(8);   
- ezButton noteBFlat(8);   
+ ezButton noteA(16);   
+ ezButton noteB(39);   
+ ezButton noteC(21);   
+ ezButton noteD(17);   
+ ezButton noteE(34);   
+ ezButton noteF(35);   
+ ezButton noteG(20);   
+ ezButton noteCSharp(38);   // C sharp
+ ezButton noteGSharp(37);   
+ ezButton noteBFlat(36);   
 // Inner notes
-ezButton noteGDash(8);   
-ezButton noteADash(8);   
-ezButton noteBDash(8);   
-ezButton noteFSharpDash(8);   
-ezButton noteEFlatDash(8);   
-ezButton noteBFlatDash(8);    
-ezButton noteCDash(8);   
+ezButton noteGDash(26);   
+ezButton noteADash(28);   
+ezButton noteBDash(32);   
+ezButton noteFSharpDash(31);   
+ezButton noteEFlatDash(25);   
+ezButton noteBFlatDash(27);    
+ezButton noteCDash(29);   
  
  void setup() 
  {
@@ -118,24 +118,12 @@ ezButton noteCDash(8);
    if(noteE.isPressed())
    Serial.println("Note E is pressed");
  
-   if(noteB.isPressed())
-     Serial.println("Note B is pressed");
- 
-   if(noteC.isPressed())
-   Serial.println("Note C is pressed");
- 
-   if(noteD.isPressed())
-   Serial.println("Note D is pressed");
- 
-   if(noteE.isPressed())
-   Serial.println("Note E is pressed");
- 
    if(noteF.isPressed())
      Serial.println("Note F is pressed");
  
-   if(noteG.isPressed())
+   if(noteG.isPressed())                 // good to here
    Serial.println("Note G is pressed");
- 
+  
    if(noteCSharp.isPressed())
    Serial.println("Note C Sharp is pressed");
  
