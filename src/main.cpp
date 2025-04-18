@@ -145,22 +145,29 @@ ezButton noteCDash(8);
    if(noteBFlat.isPressed())
      Serial.println("Note B Flat is pressed");
  
-   if(noteC.isPressed())
-   Serial.println("Note C is pressed");
+// inner notes below
+
+   if(noteGDash.isPressed())
+   Serial.println("Inner G is pressed");
  
-   if(noteD.isPressed())
-   Serial.println("Note D is pressed");
+   if(noteADash.isPressed())
+   Serial.println("Inner A is pressed");
  
-   if(noteE.isPressed())
-   Serial.println("Note E is pressed");
- 
- 
- 
- 
- 
- 
- 
- 
+   if(noteBDash.isPressed())
+   Serial.println("Inner B is pressed");
+
+   if(noteFSharpDash.isPressed())
+   Serial.println("Inner F Sharp is pressed");
+
+   if(noteEFlatDash.isPressed())
+   Serial.println("Inner E Flat is pressed");
+
+   if(noteBFlatDash.isPressed())
+   Serial.println("Inner B Flat is pressed");
+
+   if(noteCDash.isPressed())
+   Serial.println("Inner C is pressed");
+
  
   }  // end void loop
  
