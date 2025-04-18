@@ -101,23 +101,68 @@ ezButton noteCDash(8);
 
    if(noteA.isPressed())
    //PK todo add code to play the note use the Teensy example from Arduino IDE trial
-     Serial.println("The button 1 is pressed");
+     Serial.println("Note A is pressed");
  
-   if(noteA.isReleased())
-     Serial.println("The button 1 is released");
+//   if(noteA.isReleased())
+//     Serial.println("The button 1 is released");
  
    if(noteB.isPressed())
-     Serial.println("The button 2 is pressed");
- 
-   if(noteB.isReleased())
-     Serial.println("The button 2 is released");
+     Serial.println("Note B is pressed");
  
    if(noteC.isPressed())
-     Serial.println("The button 3 is pressed");
+   Serial.println("Note C is pressed");
  
-   if(noteC.isReleased())
-     Serial.println("The button 3 is released");
- }
+   if(noteD.isPressed())
+   Serial.println("Note D is pressed");
+ 
+   if(noteE.isPressed())
+   Serial.println("Note E is pressed");
+ 
+   if(noteB.isPressed())
+     Serial.println("Note B is pressed");
+ 
+   if(noteC.isPressed())
+   Serial.println("Note C is pressed");
+ 
+   if(noteD.isPressed())
+   Serial.println("Note D is pressed");
+ 
+   if(noteE.isPressed())
+   Serial.println("Note E is pressed");
+ 
+   if(noteF.isPressed())
+     Serial.println("Note F is pressed");
+ 
+   if(noteG.isPressed())
+   Serial.println("Note G is pressed");
+ 
+   if(noteCSharp.isPressed())
+   Serial.println("Note C Sharp is pressed");
+ 
+   if(noteGSharp.isPressed())
+   Serial.println("Note G Sharp is pressed");
+ 
+   if(noteBFlat.isPressed())
+     Serial.println("Note B Flat is pressed");
+ 
+   if(noteC.isPressed())
+   Serial.println("Note C is pressed");
+ 
+   if(noteD.isPressed())
+   Serial.println("Note D is pressed");
+ 
+   if(noteE.isPressed())
+   Serial.println("Note E is pressed");
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  }  // end void loop
  
 
 void setupDebounceTimes()
@@ -156,7 +201,7 @@ void NoteLoop()
   noteGSharp.loop(); 
   noteBFlat.loop(); 
   noteF.loop(); 
-  
+
   // inner notes
   noteGDash.loop(); 
   noteADash.loop(); 
