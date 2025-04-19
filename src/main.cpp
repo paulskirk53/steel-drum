@@ -162,25 +162,25 @@ ezButton noteCDash(29);
 
 void setupDebounceTimes()
 {
-  noteA.setDebounceTime(50); // set debounce time to 50 milliseconds
-  noteB.setDebounceTime(50); 
-  noteC.setDebounceTime(50); 
-  noteD.setDebounceTime(50); 
-  noteE.setDebounceTime(50); 
-  noteF.setDebounceTime(50); 
-  noteG.setDebounceTime(50); 
-  noteCSharp.setDebounceTime(50); 
-  noteGSharp.setDebounceTime(50); 
-  noteBFlat.setDebounceTime(50); 
+  noteA.setDebounceTime(40); // set debounce time to 40 milliseconds
+  noteB.setDebounceTime(40); 
+  noteC.setDebounceTime(40); 
+  noteD.setDebounceTime(40); 
+  noteE.setDebounceTime(40); 
+  noteF.setDebounceTime(40); 
+  noteG.setDebounceTime(40); 
+  noteCSharp.setDebounceTime(40); 
+  noteGSharp.setDebounceTime(40); 
+  noteBFlat.setDebounceTime(40); 
   
   //inner notes
-  noteGDash.setDebounceTime(50); 
-  noteADash.setDebounceTime(50); 
-  noteBDash.setDebounceTime(50); 
-  noteFSharpDash.setDebounceTime(50); 
-  noteEFlatDash.setDebounceTime(50); 
-  noteBFlatDash.setDebounceTime(50); 
-  noteCDash.setDebounceTime(50); 
+  noteGDash.setDebounceTime(40); 
+  noteADash.setDebounceTime(40); 
+  noteBDash.setDebounceTime(40); 
+  noteFSharpDash.setDebounceTime(40); 
+  noteEFlatDash.setDebounceTime(40); 
+  noteBFlatDash.setDebounceTime(40); 
+  noteCDash.setDebounceTime(40); 
   // etc
 }
 void NoteLoop()
