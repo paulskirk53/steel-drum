@@ -53,10 +53,10 @@ AudioControlSGTL5000     sgtl5000_1;     //xy=613,589
  ezButton noteA(16);   
  ezButton noteB(39);   
  ezButton noteC(21);   
- ezButton noteD(17);   
+ ezButton noteD(20);   //was 17
  ezButton noteE(34);   
  ezButton noteF(35);   
- ezButton noteG(20);   
+ ezButton noteG(17);   //was 20
  ezButton noteCSharp(38);   // C sharp
  ezButton noteGSharp(37);   
  ezButton noteBFlat(36);   
@@ -87,7 +87,7 @@ ezButton noteCDash(29);
    mixer1.gain(1, 0.5);
    
    delay(1000);
-
+   Serial.println("Connected ok");
 
    setupDebounceTimes();   // PK - todo ensure the routine has lines for all pads. The debounce time may be adjusted to suit debounce characteristic of drumstick & pad
 
