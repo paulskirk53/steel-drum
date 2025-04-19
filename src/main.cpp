@@ -53,11 +53,11 @@ AudioControlSGTL5000     sgtl5000_1;     //xy=613,589
  ezButton noteA(16);   
  ezButton noteB(39);   
  ezButton noteC(21);   
- ezButton noteD(20);   //was 17
+ ezButton noteD(20);   
  ezButton noteE(34);   
  ezButton noteF(35);   
- ezButton noteG(17);   //was 20
- ezButton noteCSharp(38);   // C sharp
+ ezButton noteG(17);   
+ ezButton noteCSharp(38);   
  ezButton noteGSharp(37);   
  ezButton noteBFlat(36);   
 // Inner notes
