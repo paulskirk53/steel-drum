@@ -107,55 +107,75 @@ ezButton noteCDash(29);
 //     Serial.println("The button 1 is released");
  
    if(noteB.isPressed())
-     Serial.println("Note B is pressed");
- 
+     {
+       Serial.println("Note B is pressed");
+     }
    if(noteC.isPressed())
-   Serial.println("Note C is pressed");
- 
+     {
+       playSdWav1.play("C.WAV");
+       delay(10); // wait for library to parse WAV info
+       Serial.println("Note C is pressed");
+     }
    if(noteD.isPressed())
-   Serial.println("Note D is pressed");
- 
+     { 
+       Serial.println("Note D is pressed");
+     }
    if(noteE.isPressed())
-   Serial.println("Note E is pressed");
- 
+     { 
+       Serial.println("Note E is pressed");
+     }
    if(noteF.isPressed())
-     Serial.println("Note F is pressed");
- 
+     { 
+        playSdWav2.play("F.WAV");
+        delay(10); // wait for library to parse WAV info
+        Serial.println("Note F is pressed");
+     }
    if(noteG.isPressed())                 // good to here
-   Serial.println("Note G is pressed");
-  
+     { 
+       Serial.println("Note G is pressed");
+     }
    if(noteCSharp.isPressed())
-   Serial.println("Note C Sharp is pressed");
- 
+     { 
+       Serial.println("Note C Sharp is pressed");
+     }
    if(noteGSharp.isPressed())
-   Serial.println("Note G Sharp is pressed");
- 
+     {  
+       Serial.println("Note G Sharp is pressed");
+     }
    if(noteBFlat.isPressed())
-     Serial.println("Note B Flat is pressed");
- 
+     { 
+       Serial.println("Note B Flat is pressed");
+     }
 // inner notes below
 
    if(noteGDash.isPressed())
-   Serial.println("Inner G is pressed");
- 
+     {
+       Serial.println("Inner G is pressed");
+     }
    if(noteADash.isPressed())
-   Serial.println("Inner A is pressed");
- 
+     {  
+       Serial.println("Inner A is pressed");
+     }
    if(noteBDash.isPressed())
-   Serial.println("Inner B is pressed");
-
+     { 
+       Serial.println("Inner B is pressed");
+     }
    if(noteFSharpDash.isPressed())
-   Serial.println("Inner F Sharp is pressed");
-
+     {
+       Serial.println("Inner F Sharp is pressed");
+     }
    if(noteEFlatDash.isPressed())
-   Serial.println("Inner E Flat is pressed");
-
+     {
+       Serial.println("Inner E Flat is pressed");
+     }
    if(noteBFlatDash.isPressed())
-   Serial.println("Inner B Flat is pressed");
-
+     { 
+       Serial.println("Inner B Flat is pressed");
+     }
    if(noteCDash.isPressed())
-   Serial.println("Inner C is pressed");
-
+     {  
+       Serial.println("Inner C is pressed");
+     }
  
   }  // end void loop
  
